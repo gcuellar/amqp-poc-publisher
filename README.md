@@ -11,5 +11,5 @@
 ## Run
 
 ```bash
-java -jar build/libs/amqp.poc-0.0.1-SNAPSHOT.jar MSG
+java -jar build/libs/amqp.poc-publisher-0.0.1-SNAPSHOT.jar MSG
 ```
