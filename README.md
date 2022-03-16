@@ -2,4 +2,14 @@
 
 ## Usage
 
-java -jar amqp-poc-publisher-0.0.0-SNAPSHOT.jar _param1_
+## Build 
+
+```bash
+./gradlew clean assemble
+```
+
+## Run
+
+```bash
+java -jar build/libs/amqp.poc-0.0.1-SNAPSHOT.jar MSG
+```
