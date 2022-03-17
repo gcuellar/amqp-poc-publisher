@@ -2,6 +2,16 @@
 
 ## Usage
 
+## Run RabbitMQ in localhost with Docker
+```
+docker run -detach --rm \
+--hostname poc-fanout-notification-service-rabbit \
+--name poc-fanout-notification-service-rabbit \
+--publish 15672:15672 \
+--publish 5672:5672 \
+rabbitmq:3.8-management
+```
+
 ## Build 
 
 ```bash
