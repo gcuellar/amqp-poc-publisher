@@ -17,7 +17,7 @@ class Publisher {
         this.rabbitTemplate = rabbitTemplate
     }
 
-    void publish(String message){
-        rabbitTemplate.convertAndSend(EXCHANGE_NAME,"", message)
+    void publish(String message, String routingKey){
+        rabbitTemplate.convertAndSend(EXCHANGE_NAME, routingKey, message)
     }
 }

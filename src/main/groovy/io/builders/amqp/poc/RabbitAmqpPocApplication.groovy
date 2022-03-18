@@ -16,9 +16,15 @@ class RabbitAmqpPocApplication {
 	@Bean
 	CommandLineRunner runner(Publisher publisher) {
 		(args) -> {
-			publisher.publish(args[0])
+			publisher.publish(args[0], args[1]?:"")
+
+			println ""
+			println ""
 			println "-- Message sent -- "
-			println args[0]
+			println ""
+			println "routingKey: " + args[1]
+			println "payload: " + args[0]
+			println ""
 			println "-- ------------ -- "
 		}
 	}
